@@ -15,7 +15,7 @@ class ALockError(Exception):
 
 
 class ALock:
-  """An asynchronous contaxt manager creating a system-wide lock."""
+  """An asynchronous context manager creating a system-wide lock."""
 
   def __init__(
     self,
@@ -25,7 +25,7 @@ class ALock:
     reentrant: bool = False,
     lock_directory: str | None = None,
   ) -> None:
-    """Create a new `Alock` context manager.
+    """Create a new `ALock` context manager.
 
     Parameters
     ----------
